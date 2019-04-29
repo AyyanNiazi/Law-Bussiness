@@ -86,3 +86,10 @@ body{
     margin-top: 344vh ;
 }
  
+.testinomials{
+    border: 1px solid rgb(211, 207, 207);
+}
+
+.testinomials p{
+    margin: 3vw;
+}

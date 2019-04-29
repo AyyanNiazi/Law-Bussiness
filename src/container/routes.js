@@ -9,6 +9,7 @@ import Header from '../component/header';
 import Home from '../component/home'
 import About from '../component/about'
 import Contact from '../component/contact'
+import Footer from '../component/footer'
 
 
 class Routes extends Component {
@@ -29,6 +30,7 @@ class Routes extends Component {
                       <Route exact  path='/contact' component={Contact} />
                     </Switch>
                 </Router>
+                    <Footer />
             </React.Fragment>
          );
     }
