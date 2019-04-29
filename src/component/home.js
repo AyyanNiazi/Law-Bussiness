@@ -8,6 +8,7 @@ import logo1 from './image/logo1.png'
 import logo2 from './image/logo2.png'
 import logo3 from './image/logo3.png'
 import logo4 from './image/logo4.png'
+import law from './image/law.jpg'
 import './header.css';
 
 
@@ -17,22 +18,85 @@ class Home extends Component {
     render(props) {
         return (
             <div>
+          <div>  
+                <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" id="slides_1"/>
+                <input type="radio" name="slides" checked="checked" id="slides_2"/>
+                <input type="radio" name="slides" id="slides_3"/>
+                <input type="radio" name="slides" id="slides_4"/>
+                <input type="radio" name="slides" id="slides_5"/>
+                <input type="radio" name="slides" id="slides_6"/>
+                <ul>
+                    <li>
+                    <h1>Say hello to CSS3</h1>
+                    <p>CSSlider is lightweight & easy to use slider. No JS - pure CSS.</p>
+                    </li>
+                    <li><img src={law}/>
+                    </li>
+                    <li>
+                    <div id="bg">
+                        <div>
+                        <h1>CSS Events</h1>
+                        <p>When slide 3 is reached - play CSS animation!</p>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="scrollable">
+                    <h1>Lots of text</h1>
+                    <h2>Scrollable one</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                        semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    </p>
+                    </li>
+                    <li>
+                    <div id="center"> <a class="nice-link" href="https://github.com/drygiel/csslider" data-text="More examples on github" target="_blank">More examples on github</a></div>
+                    </li>
+                    <li>
+                    <div id="center"><a class="play" id="dex-sign" href="http://drygiel.com" target="_blank"></a></div>
+                    </li>
+                </ul>
+                <div class="arrows">
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                    <label for="slides_5"></label>
+                    <label for="slides_6"></label>
+                    <label class="goto-first" for="slides_1"></label>
+                    <label class="goto-last" for="slides_6"></label>
+                </div>
+            </div>
+
+    </div>
+
+            <div>
                 <main class='container' >
                     <section class='sec-1' >
                         <div class='columns sec-1-first' >
-                            <div class='column'><i class="fa fa-pen-fancy"></i>WYSIWYG Editor<br />
+                            <div class='column'><i class="fa fa-pen-fancy" style={{ color: '#EA2E0d'}} ></i>WYSIWYG Editor<br />
                                 <p>A real-time WYSIWYG editor: you are able to customize the look of your website directly on page and see your changes right away!</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-book"></i> Solid Law Practic<br />
+                            <div class='column'><i class="fa fa-book"  style={{ color: '#EA2E0d'}}></i> Solid Law Practic<br />
                                 <p>Custom admin panel significantly extends original Wordpress functionality, turning it into an all-in-one tool for content management.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-briefcase"></i> Special Design
+                            <div class='column'> <span  ><i class="fa fa-briefcase" style={{ color: '#EA2E0d',font: '1.314em'}} ></i></span>  Special Design
                             <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-anchor"></i> Powerful Admin<br />
+                            <div class='column'><i class="fa fa-anchor" style={{ color: '#EA2E0d'}} ></i> Powerful Admin<br />
                                 <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
@@ -222,7 +286,7 @@ class Home extends Component {
                             </div>
                 </section>
          </main> 
-          </div>
+          </div></div>
                 );
             }
         }

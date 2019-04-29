@@ -40,27 +40,27 @@ class Footer extends Component {
                     <div class='column' >
                         <h4>Recent Posts</h4><hr />
 
-                        <li> Our Team Members   </li>
-                        <li>  How We Can Help You  </li>
-                        <li> Standard Post With an Image   </li>
-                        <li> Standard Post Without Image   </li>
-                        <li> Video post format   </li>
-                        <li> Gallery Post Format   </li>
-                        <li>  Quote post format  </li>
-                        <li>   Audio Post Format </li>
+                        <li> > Our Team Members   </li>
+                        <li> > How We Can Help You  </li>
+                        <li> > Standard Post With an Image   </li>
+                        <li> > Standard Post Without Image   </li>
+                        <li> > Video post format   </li>
+                        <li> > Gallery Post Format   </li>
+                        <li> > Quote post format  </li>
+                        <li> >  Audio Post Format </li>
 
                     </div>
                     <div class='column' >
                         <h4>Attorneys</h4> <hr />
 
-                        <li> Jack Simmons </li>
-                        <li> Jack Simmons </li>
-                        <li> Jack Simmons </li>
-                        <li>Karen Dawson  </li>
-                        <li> Karen Dawson </li>
-                        <li> Karen Dawson </li>
-                        <li> Karen Dawson </li>
-                        <li> Karen Dawson </li>
+                        <li type='none  '> > Jack Simmons </li>
+                        <li> > Jack Simmons </li>
+                        <li> > Jack Simmons </li>
+                        <li> > Karen Dawson  </li>
+                        <li> > Karen Dawson </li>
+                        <li> > Karen Dawson </li>
+                        <li> > Karen Dawson </li>
+                        <li> > Karen Dawson </li>
 
                     </div>
                     <div class='column' >

@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
-
+import pen from './image/pen.png'
+import './header.css';
 
     class Header extends Component {
                  
@@ -9,17 +10,21 @@ import {Link} from 'react-router-dom';
             return ( 
               <div>
 
-                <div class='top-head' >
+                <div class='top-head'>
+                    <div class='container'>
                         <div class='top-under' >
                             <p> <i class="fa fa-mobile"></i> Call us: 1-800-643-4300
                                 <i class="fa fa-envelope"></i>   info@lawbusinessdemo.web
                              </p>
                         </div>
                         <div class='under-social' >
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-linkedin-in"></i>
+                        <a href='#'><i class="fa fa-twitter"></i></a>
+                        <a href='#'><i class="fa fa-facebook"></i></a>
+                        <a href='#'> <i class="fa fa-feed"></i></a>
+                        <a href='#'><i class="fa fa-skype"></i></a>
+                        <a href='#'><i class="fa fa-linkedin"></i></a>
                         </div>
+                    </div>
                 </div>
 
                  <nav class="navbar main-nav" role="navigation" aria-label="main navigation" >
@@ -52,13 +57,13 @@ import {Link} from 'react-router-dom';
                             </div> */}
 
                             <div class="navbar-start right-home">
-                                 <Link to='/' class="navbar-item">
+                                 <Link to='/' class="navbar-item link">
                                     Home
                                   </Link>
-                                <Link to='/about' class="navbar-item">
+                                <Link to='/about' class="navbar-item link ">
                                     About us
                                 </Link>
-                                <Link to='/contact' class="navbar-item">
+                                <Link to='/contact' class="navbar-item link">
                                     Contact us
                                 </Link>
 
@@ -67,7 +72,7 @@ import {Link} from 'react-router-dom';
                 </nav>
 
 {/* 1st section */}
-       
+    
         
               </div>
             );
