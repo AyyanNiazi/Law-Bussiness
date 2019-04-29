@@ -1,0 +1,88 @@
+
+body{
+    font-family: 'Noto Serif', serif;    
+}
+
+/* header1 */
+.main-nav{
+    height: 9vw;
+}
+.top-head{
+    height: 2.5vh;
+    background-color: black;
+    color: rgb(170, 170, 170)
+}
+.top-under {
+    margin-left: 3vw;
+}
+.top-under i{
+    margin-left: 3vw;
+}
+.under-social{
+    margin-left: 1vw
+}
+
+.logo{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.945em;
+    margin-left: 5vw;
+}
+.logo i{
+    margin-right: 1.5vw;
+    color: red
+}
+.right-home{
+    margin-left: 25vw;
+    font-size: 1.145em
+}
+.right-home .navbar-item{
+    margin: 1vw;
+}
+
+/* sec 1 */
+
+.sec-1-first{
+    font-weight: 500
+}
+.sec-1-first .column i{
+    margin-right: 2vw;
+}
+
+.sec-1-first .column p{
+    color: rgb(156, 154, 154);
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    /* text-align:  */
+}
+.sec-1-first .column h6 i{
+   padding-left: 4px;
+    /* text-align:  */
+}
+
+/* 2nd section */
+.sec-2 .columns{
+    height: 16vh;
+}
+.sec-2 .columns .column h1{
+    font-size: 1.945em;
+
+}
+.sec-2 .columns .is-four-fifths{
+   border: 1px solid rgb(211, 207, 207);
+   border-right: 0px;
+   background-color:  #FCFCFC
+}
+.sec-2 .columns .is-four-fifths{
+    border: 1px solid rgb(211, 207, 207);
+ }
+.sec-2-btn{
+    background-color: #EA2E0d;
+    color: white;
+    margin-top: 3vh ;
+}
+.sec-2-btn ::after{
+    background-color: black;
+    color: white;
+    margin-top: 344vh ;
+}
+ 
