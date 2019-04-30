@@ -1,0 +1,25 @@
+.upper{
+    background-color: #fbfbfb;
+    padding: 40px;
+    height: 18vh;
+}
+
+.recent-post a{
+    color: #ea2e0d;
+
+}
+
+input :active{
+    color: #ea2e0d;
+    
+}
+
+.box{
+    padding: 40px;
+    border: 1px solid rgb(219, 216, 216)
+}
+
+.state-box{
+    border: 1px solid rgb(219, 216, 216)
+    
+}

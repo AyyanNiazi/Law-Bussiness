@@ -69,6 +69,10 @@ section.sec-1 {
     margin-left: 25vw;
     font-size: 1.145em
 }
+.right-home .link:hover{
+    color: #EA2E0d;
+    background-color: white
+}
 .right-home .navbar-item{
     margin: 1vw;
 }

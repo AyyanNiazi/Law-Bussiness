@@ -115,7 +115,6 @@ class Home extends Component {
 
                     <section class='sec-2'  >
 
-
                         <div class="columns">
                             <div class="column is-four-fifths" >
                                 <h1>All people are equal before the law. A good attorney is what makes a difference.</h1>
