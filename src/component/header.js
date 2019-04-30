@@ -4,7 +4,28 @@ import pen from './image/pen.png'
 import './header.css';
 
     class Header extends Component {
-                 
+            
+        state = {
+            scrollled: '',
+        }
+        componentDidMount(){
+            window.addEventListener('scroll', ()=> {
+                const isTop = window.scrollY < 100;
+                console.log(isTop);
+                if (isTop !== true){
+                    this.setState({  scrolled: true   })
+                }
+                else{
+                    this.setState({ scrolled: false   })
+                }
+            })
+        }
+        
+        componentWillMount(){
+            window.removeEventListener('scroll ', ()=>{
+                console.log('remover')
+            })
+        }
         render(props) { 
             // const { classes } = this.props;
             return ( 
@@ -26,6 +47,7 @@ import './header.css';
                         </div>
                     </div>
                 </div>
+            <div className={this.state.scrolled ? ' nav scrolled' : 'navreact'} > 
             <div className='container'>
                 <nav class="navbar" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
@@ -42,13 +64,16 @@ import './header.css';
 
                     <div id="navbarBasicExample" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item" href='/'>Home</a>
-                            <a class="navbar-item" href='/about'>About</a>
-                            <a class="navbar-item" href='/'>Services</a>
-                            <a class="navbar-item" href='/contact'>Contact</a>
+                            <Link class="navbar-item" to=''>Home </Link> 
+                            <Link class="navbar-item" to='/about'>About </Link> 
+                            <Link class="navbar-item" to='/contact' >Contact
+                             </Link> 
+                            {/* <a class="navbar-item" href='/about'> <Link>Home </Link> </a> */}
+                            
                         </div>
                     </div>
                     </nav>
+                    </div>
             </div>
 {/* 1st section */}
     

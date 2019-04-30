@@ -9,14 +9,19 @@
 
 }
 
+
 input :active{
     color: #ea2e0d;
     
 }
 
 .box{
-    padding: 40px;
+    /* padding: 40px; */
     border: 1px solid rgb(219, 216, 216)
+}
+
+.box p{
+    color: black
 }
 
 .state-box{

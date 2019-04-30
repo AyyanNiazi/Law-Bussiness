@@ -2,6 +2,13 @@ body{
     font-family: 'Noto Serif', serif; 
     font-size: 15px;  
 }
+.scrolled{
+	position: fixed;
+	top: 0;
+	width:  100%;
+	z-index: 100000;
+	background-color: #fff;
+}  
 .navbar-item{padding: .5rem 0.7rem;margin:0 1.7rem }
 .navbar-brand .navbar-item{margin:0}
 .navbar-menu  .navbar-link.is-active, a.navbar-item.is-active,.navbar-menu a.navbar-item:hover {
@@ -112,13 +119,37 @@ section.sec-1 h2 {
 }
 /* 2nd section */
 .sec-2 .columns{
-    height: fit-content;
+		height: fit-content;
+		margin-top: 50px; 
+		border: 1px solid rgb(211, 207, 207);
 }
+.date{
+	margin-top: 10px;
+	height: 80px;
+	width: 1px;
+	background-color: #EA2E0d;
+	color: white;
+}
+.inside-date{
+	/* bottom:	0px; */
+	/* margin-top: 20px; */
+	height: 20px;
+	width: 1px;
+	background-color: black;
+	color: white;
+}
+.sec-2 .first{
+	height: fit-content;
+	margin-top: 50px; 
+	margin-bottom: 50px; 
+	border: 1px solid rgb(211, 207, 207);
+}
+
 .sec-2 .columns .column h1{
     font-size: 1.945em;
 }
 .sec-2 .columns .is-four-fifths{
-   border: 1px solid rgb(211, 207, 207);
+	border: 1px solid rgb(211, 207, 207);
    border-right: 0px;
    background-color:  #FCFCFC
 }
@@ -139,8 +170,18 @@ section.sec-1 h2 {
     border: 1px solid rgb(211, 207, 207);
 }
 
-.testinomials p{
+.testinomials blockquote{
     margin: 3vw;
+}
+ blockquote:before {
+	position: absolute;
+	top: 21px;
+	left: 0;
+	content: '\201C';
+}
+.post_inner {
+	position: relative;
+	padding: 4px 0 10px 35px;
 }
 /* Slider */
 /* -------------------------------------------------------- reset */

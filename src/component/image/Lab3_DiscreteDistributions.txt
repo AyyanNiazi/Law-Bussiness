@@ -1,0 +1,259 @@
+---
+title: "Lab #3: Distributions, Expected Value, Variance"
+author: ""
+date: "April 21, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+#Introduction:
+
+Read the intro to PS3 and the blurb below, which adds info about using the random sampling methods for distributions:
+
+Suppose you want to sample 4000 times from the binomial distribution (to simulate 4000 repeated samples, each sample recording the number of successes from taking 80 attempts with a probability 1/4 of success on each attempt). We can use the `rbinom(N,n,p)` function for this.
+
+```{r}
+samples=rbinom(4000,80,1/4)
+
+
+#I'm going to plot the simulated distribution as a histogram, and then overlay the theoretical distribution (pmf).
+hist(samples,freq=FALSE,xlim=c(0,80),xlab="Number of successes",ylab="Frequency")
+
+X=0:80
+#(Blue) theoretical distribution
+points(X,dbinom(X,80,1/4),col="blue")
+```
+
+
+
+#Task #1: Use appropriate distributions and functions in R
+
+Choose the correct distribution (based on context of the problem) to answer each question-- use the built-in R functions of
+
++ Binomial: `dbinom,pbinom,qbinom,rbinom`
++ Geometric: `dgeom,pbinom,qbinom,rbinom`
++ Poisson: `dpois,ppois,qpois,rpois`
++ Negative binomial: `dnbinom,pnbinom,qnbinom,rnbinom`
++ Hypergeometric: `dhypr,phyper,qhyper,rhyper`
+
+In order to learn about the parameters of each of these functions (when needed) temember to use the question mark info command: e.g `?qhyper`.
+
+
+1. Create the plot of the cumulative distribution function for the $X=\#$ of emails that arrive in a given day, when you expect an average of 11 emails to arrive in your inbox each day.  
+
+Also, compute the probability that at most 8 emails arrive in your inbox in a given day.
+
+
+2. You want to simulate an experiment where researchers go up to strangers until they find 5 willing to give them directions, and the number of people asked up to this first "success" is recorded.  This is repeated 1000 times. Suppose the probability that each person will give the researchers directions is 0.6.    Go through the following steps:
+
+(i) Create 1000 samples that simulate the result of the experiment 1000 times. This will use `r------` (choose the proper distribution).
+
+(ii) Plot the histogram of the simulated experiment values.  Then overlay the theoretical distribution, as done for Binomial in the preface.
+
+
+(iii) What is the average of your simulated experiment for the number of people needed to ask? **NOTE THIS IS SLIGHTLY DIFFERENT THAN ASKING THE NUMBER OF FAILURES BEFORE 5 SUCCESSES.** What is the theoretical expected value (use our table from class!).
+
+(iv) What is the probability that someone needs to ask **more than** 12 people to successfully get directions from 5? Your answer should be 3.21\%.  Show the code that leads to this result, and explain why.
+
+
+
+
+
+
+3. Consider $X=\#$ College Grads in a random sample of 100 people from a pool where 300 are college grads and 150 are not.
+
+a. Plot the pmf, cdf, and quantile function for $X$. Change the titles for each as appropriate.
+
+b. Answer the following question: theoretically, 90\% of samples of 100 people would have at least _______ college grads.
+
+c. Use simulation by taking a random sample from the appropriate distribution (your resulting vector should represent the # of college grads in different samples of 100 people) and computing the 90th percentile of this vector by using the `quantile` function. Your result should be close to b.
+
+
+c. The middle 90\% of samples would have between _____ and _____ college grads.
+
+
+
+#Task #2 Finding the best parameter from data.
+
+
+
+The built-in data set `warpbreaks` counts the number of yarn breaks that occur in a fixed length of yarn while using a loom.
+<br>
+
+</br>
+First, for your own purposes, `View(warpbreaks)`.  Note that there's two types of yarn in the data set and three levels of tension.  We're going to focus on one case: wool type A, and medium (M) tension.
+
+To restrict the data set to this case, I'm using the `subset` function on the data frame:
+
+```{r}
+AMYarn=subset.data.frame(warpbreaks, wool=="A" & tension=="M")
+View(AMYarn)
+```
+<br>
+
+
+
+</br>
+
+1. Decide what type of discrete distribution might be reasonable as a model for `AMYarn`.  
+<br>
+
+</br>
+
+2. Use the sample data set to  estimate any parameter(s) you need in order to define the distribution, based on the definition of those parameters.
+
+<br>
+
+
+
+
+
+</br>
+
+Once you have decided what distribution is appropriate, we'll plot the cmf from your theoretical distribution on the same plot as an "empirical" cmf-- which is just found by finding $P(X\le k)$ in the sample data alone.  If your distribution is a reasonable choice, the two should have a similar shape, and if your parameter is correct they should be well aligned (centered at the same point).
+
+
+To create this plot, modify the code below by replacing the discrete uniform distribution (which is wrong) with your choice of a model.
+
+```{r}
+plot(ecdf(AMYarn$breaks),main="CMF of Yarn Break Data",ylab="Cumulative Probabilities", xlab="Number of breaks") #ecdf creates an "empirical" (from a sample) cumulative distribution function.
+Xvals=0:40
+lines(Xvals,punif(Xvals,min=0,max=48),"b",col="blue")  # you'll replace "punif( )" in this line
+```
+<br>
+
+
+
+</br>
+
+Once you're happy with your distribution model, you can use the following to check that you chose well (or at least, chose the same as Jen did-- no guarantee that those are always equivalent!).
+
+
+According to Jen's model, the probability that another trial is run and the yarn breaks 15 times is 1.46%, and the probability that there are at most 30 breaks is 90.42%. 
+
+
+
+
+
+
+
+# Task 3: Expected Value and Variance in R
+
+
+1. Create `X`: a vector of values from 0:1000 representing the number of trials before the first success when the probability of success for each trial is 0.2.  Compute the vector `pX` giving the corresponding pmf values for the correct distribution. 
+
+(i) Use basic vector operations and R to compute the expected value $E(X)$. Ensure that this corresponds to our theoretical expected value (use the table).
+
+(ii) Use basic vector operations and R to compute the variance $V(X)$.  Ensure that this corresponds to our theoretical variance (use the table). 
+
+(iii) Sample 12000 times from the appropriate distribution.  Compute the sample mean via `mean()` and the sample variance via `var()`.  Compare these to your answers in (i) and (ii) to ensure they are "close".
+
+
+(iv) Imagine a situation where you are paid $\$\frac{200}{x+1}$ if you fail exactly $x$ times before succeeding.  What is the expected value of your earnings from this situation?
+
+
+(v) Same situation as above -- compute the variance.
+
+
+(vi) Take the sample from (iii) and convert each value into a dollar amount you'd be paid. Then compute the sample mean via `mean()` and the sample variance via `var()`. Show these to check they are "close" to your answers in (iv) and (v).
+
+
+# Task 4: Some basic Continuous Distribution stuff
+
+
+Suppose we have a continuous random variable $X$ representing the weight of a watermelon in kilograms.  $X$ takes on values in $[9,16]$ with probability density function $f(x) = \frac{3}{74} \sqrt{x}$.
+
+1. Show that the total probability is 1. Use the equations in LaTeX to set up your integrals and show your math.
+
+2. Compute the expected value, using integrals. Show your work in LaTeX equations.
+
+
+3. Suppose you decide to estimate the continous random distribution with a discrete one measured every hundredth.  You take `X = seq(9,16,0.01)` and `fX = 3/74 * sqrt(X)`
+
+What is `sum(fX)` -- and why does this throw a red flag?
+
+Define a new vector `pX` to correspond to the values of `X` so that `sum(pX)` is approximately correct.
+
+
+4. You try to compute $E(X)$ by taking `sum(fX * X)` or `fX%*% X`.  What is the result?
+
+Fix the computation above using your `pX` from 3.  You should end close to the value from your computation in 2.
+
+
+
+
+# Task 5 -- More Realistic Bayes Applicaiton -- optional, extra credit for 15 lab points.
+
+Suppose that a pond contains a population of trout (population size unknown).  You catch and tag 100 trout.  A day later, you catch 100 trout again -- there are 60 tagged trout in your sample.
+
+1. Which seems more likely (no computation necessary -- just explain your reasoning): that there are more than 200 trout in the pond, or that there are less than 200 trout in the pond?
+
+
+2. Compute the probability $P(\text{60 tagged fish in the sample} \mid \text{there are 200 total fish in the pond})$. 
+
+
+
+
+
+
+
+Now Suppose you know from earlier study that populations of similar ponds take on total population values `H<- 150:300`
+
+With probabilities `pH <- (H-200)^2/sum((H-200)^2)` defining the probability mass function.
+
+```{r}
+
+H = 150:300
+pH = (H-200)^2/sum((H-200)^2)
+
+pFgivenH = dhyper(60,100,H-100,100)
+pFandH = pFgivenH * pH
+
+pHgivenF = pFandH/sum(pFandH)
+
+which.max(pHgivenF)
+
+which.max(pFgivenH)
+```
+
+
+Consider as your alternative hypotheses: $H_i:$ there are exactly $i$ fish in the pond.  I want you to try to use Bayes' Theorem to decide which of these (151) hypotheses are most likely, given that you caught exactly 60 tagged fish in the sample of 100.  So you will be asked to compute $P(\text{there are $i$ fish in the pond} \mid \text{60 of the 100 sampled fish were tagged})$ for $i$ between 151 and 300.**
+
+
+
+
+
+3. The Bayesian priors $P(H_i)$ are located in in the vector `pH`. What is the index for $P(H_{400})$ (The chance of there being exactly 400 fish total in the pond)?
+
+4. Use the `dhyper(x,m,n,k)` command-- where x,m,k are known from the problem, and n is determined using `X`, to compute a vector of $P(\text{60 tagged fish in the sample} \mid \text{there are i fish in the pond})$.  
+
+Also use `which.max()` to identify the index in `H` that produces the highest of these values.  What number of total fish does this correspond to?
+
+
+5. Compute $P(\text{60 tagged fish in the sample} \cap \text{there are i fish in the pond})$ for each $H_i$ by using the fact that this equals $P(\text{there are i fish in the pond})\cdot P(\text{60 tagged fish in the sample} \mid \text{there are i fish in the pond})$.
+
+
+6. Compute $P(\text{60 tagged fish in the sample})$ by taking the sum of all the probabilities in (iv).
+
+
+7. Compute $P(\text{there are i fish in the pond}\mid \text{60 tagged fish in the sample})$ using Bayes' Theorem and your results from (iv) and (v).
+
+
+
+8. Find the index in the array above which produces the maximal probability. Use `which.max()` to accomplish this.  Then convert this into the $i$ so that $H_i$ is the most likely hypothesis: that is, $i$ is equal to the number of fish that is most likely, given the data that 60 of the sampled fish are tagged.
+
+This will be close to, but not exactly, the value from 4.
+
+[This is called the "maximum likelihood estimate" for the number of fish in the pond. Congrats-- you've done a very realistic application of Bayes' Theorem].
+
+
+
+
+
+
+
+

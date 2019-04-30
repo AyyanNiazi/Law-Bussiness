@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Map from './map';
 import './main.css';
+import './contact.css'
 
 
 
@@ -38,11 +39,11 @@ class Contact extends Component {
     }
 
     render(props) {
-        const { classes } = this.props;
+        // const { classes } = this.props;
         return (
             <main>
                 <div class='columns upper' >
-                    <div class='column is-four-fifths' > <h1>Contacts</h1></div>
+                    <div class='column is-three-quarters' > <h4>Contacts</h4>  </div>
                     <div class='column' > <h6> <span style={{ color: 'red' }} >Home</span> > Contacts</h6> </div>
                 </div>
 
@@ -50,7 +51,7 @@ class Contact extends Component {
 
                 <section class='container' >
                     <div class='columns' >
-                        <div class='column is-four-fifhts' > <div style={{width: '666', height: '374'}} ><Map /></div>  <br />
+                        <div class='column is-three-quarters' > <div ><Map /></div>  <br />
 
                             <form>
                                 <div class="field">
@@ -100,7 +101,7 @@ class Contact extends Component {
                         <div class='column' >
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-success" type="text" placeholder="Enter Keyword" />
+                                    <input class="input is-danger" type="text" placeholder="Enter Keyword" />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -112,13 +113,13 @@ class Contact extends Component {
                             </div>
 
                             <div class='recent-post' >
-                                <h3>Recent Posts </h3>
+                                <h3>Recent Posts </h3><br/>
 
-                                ><a>  Our Team Members</a><hr />
-                                ><a>  How We Can Help You</a><hr />
-                                ><a>  Standard Post With an Image </a><hr />
-                                ><a>  Standard Post Without Image</a><hr />
-                                ><a>  Video post format</a><br /> <br /> <hr />
+                                <a> > Our Team Members</a><hr />
+                                <a> > How We Can Help You</a><hr />
+                                <a> > Standard Post With an Image </a><hr />
+                                <a> > Standard Post Without Image</a><hr />
+                                <a> > Video post format</a><br /> <br /> <hr />
                             </div>
 
                             <div>

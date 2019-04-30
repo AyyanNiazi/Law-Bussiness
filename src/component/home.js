@@ -10,7 +10,7 @@ import logo3 from './image/logo3.png'
 import logo4 from './image/logo4.png'
 import law from './image/law.jpg'
 import law1 from './image/law-1.jpg'
-import law2 from './image/law-2.jpg'
+import law2 from './image/law-2.jpg'    
 import law3 from './image/law-3.jpg'
 import './header.css';
 
@@ -115,7 +115,7 @@ class Home extends Component {
 
                     <section class='sec-2'  >
 
-                        <div class="columns">
+                        <div class="columns first">
                             <div class="column is-four-fifths" >
                                 <h1>All people are equal before the law. A good attorney is what makes a difference.</h1>
                             </div>
@@ -191,14 +191,23 @@ class Home extends Component {
                             <div class='column' >
                                 <h3>Latest News</h3>
 
-                                <div class='columns'>
-                                    <div class='column' > 23 March </div>
+                                <div class='columns '>
+                                <article class="one_first post-5707 post type-post status-publish format-standard hentry category-uncategorized"><div class="post_inner">
+<abbr class="published post-date updated" title="March 23, 2014"><span class="cmsms_post_day">23</span><span class="cmsms_post_month">Mar</span></abbr>
+		<div class="cmsms_timeline_inner_wrap cmsms_animated"><div class="cmsms_timeline_inner"><h4 class="entry-title"><a href="http://lawbusiness.cmsmasters.net/our-team-members/" title="Our Team Members">Our Team Members</a></h4><div class="meta_wrap"> <span class="vcard author"><span class="fn"><a href="http://lawbusiness.cmsmasters.net/author/backdoor/" title="cmsmasters">cmsmasters</a></span></span>&nbsp;&nbsp;Comments (<a class="post_comments" href="http://lawbusiness.cmsmasters.net/our-team-members/#respond" title="Comments Our Team Members">0</a>)</div><div class="entry-content">
+We enjoy&nbsp; the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</div>
+<div class="cl"></div>
+</div>
+</div>
+</div>
+</article>
+                                    {/* <div class='column date' > 23 <span class='inside-date'>  March  </span></div>
 
                                     <div class='column is-four-fifths' > <h3>Our Team Members</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
                                         <br /><br />
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div class='columns'>
                                     <div class='column' > 21 March </div>
@@ -215,7 +224,7 @@ class Home extends Component {
                                 <h3>Testinomials</h3>
                                 <br />
                                 <div class='coulmns testinomials' >
-                                    <p >Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!</p>
+                                    <blockquote> "    Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!</blockquote>
                                 </div>
 
                                 <div>
