@@ -192,22 +192,13 @@ class Home extends Component {
                                 <h3>Latest News</h3>
 
                                 <div class='columns '>
-                                <article class="one_first post-5707 post type-post status-publish format-standard hentry category-uncategorized"><div class="post_inner">
-<abbr class="published post-date updated" title="March 23, 2014"><span class="cmsms_post_day">23</span><span class="cmsms_post_month">Mar</span></abbr>
-		<div class="cmsms_timeline_inner_wrap cmsms_animated"><div class="cmsms_timeline_inner"><h4 class="entry-title"><a href="http://lawbusiness.cmsmasters.net/our-team-members/" title="Our Team Members">Our Team Members</a></h4><div class="meta_wrap"> <span class="vcard author"><span class="fn"><a href="http://lawbusiness.cmsmasters.net/author/backdoor/" title="cmsmasters">cmsmasters</a></span></span>&nbsp;&nbsp;Comments (<a class="post_comments" href="http://lawbusiness.cmsmasters.net/our-team-members/#respond" title="Comments Our Team Members">0</a>)</div><div class="entry-content">
-We enjoy&nbsp; the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</div>
-<div class="cl"></div>
-</div>
-</div>
-</div>
-</article>
-                                    {/* <div class='column date' > 23 <span class='inside-date'>  March  </span></div>
+                                    <div class='column date' > 23 <span class='inside-date'>  March  </span></div>
 
                                     <div class='column is-four-fifths' > <h3>Our Team Members</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
                                         <br /><br />
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
-                                    </div> */}
+                                    </div>
                                 </div>
                                 <div class='columns'>
                                     <div class='column' > 21 March </div>

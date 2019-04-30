@@ -131,9 +131,8 @@ section.sec-1 h2 {
 	color: white;
 }
 .inside-date{
-	/* bottom:	0px; */
-	/* margin-top: 20px; */
-	height: 20px;
+	margin: 50px;
+	height: 80px;
 	width: 1px;
 	background-color: black;
 	color: white;
@@ -170,18 +169,8 @@ section.sec-1 h2 {
     border: 1px solid rgb(211, 207, 207);
 }
 
-.testinomials blockquote{
+.testinomials p{
     margin: 3vw;
-}
- blockquote:before {
-	position: absolute;
-	top: 21px;
-	left: 0;
-	content: '\201C';
-}
-.post_inner {
-	position: relative;
-	padding: 4px 0 10px 35px;
 }
 /* Slider */
 /* -------------------------------------------------------- reset */
