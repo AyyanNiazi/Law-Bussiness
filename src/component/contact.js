@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Map from './map'
-import './contact.css'
+import React,{Component} from 'react';
+import Map from './map';
+import './main.css';
+
+
 
 class Contact extends Component {
 

@@ -13,7 +13,7 @@ import './header.css';
                 <div class='top-head'>
                     <div class='container'>
                         <div class='top-under' >
-                            <p> <i class="fa fa-mobile"></i> Call us: 1-800-643-4300
+                            <p> <i class="fa fa-phone"></i> Call us: 1-800-643-4300
                                 <i class="fa fa-envelope"></i>   info@lawbusinessdemo.web
                              </p>
                         </div>
@@ -26,51 +26,30 @@ import './header.css';
                         </div>
                     </div>
                 </div>
+            <div className='container'>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item logo"  >
+                                                    {/* <img src=ight="28" /> */}
+                                                    <i class="fa fa-balance-scale"></i> Law Bussiness
+                        </a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        </a>
+                    </div>
 
-                 <nav class="navbar main-nav" role="navigation" aria-label="main navigation" >
-                        <div class="navbar-brand">
-                            <a class="navbar-item logo"  >
-                                {/* <img src=ight="28" /> */}
-                                <i class="fa fa-gavel"></i> Law Bussiness
-                            </a>
-
-                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href='/'>Home</a>
+                            <a class="navbar-item" href='/about'>About</a>
+                            <a class="navbar-item" href='/'>Services</a>
+                            <a class="navbar-item" href='/contact'>Contact</a>
                         </div>
-
-                        <div id="navbarBasicExample" class="navbar-menu">
-                            
-                            {/* <div class="navbar-start">
-                                <Link to='/' class="navbar-item">
-                                    Home
-                                  </Link>
-                                <Link to='/about' class="navbar-item">
-                                    About us
-                                </Link>
-                                <Link to='/contact' class="navbar-item">
-                                    Contact us
-                                </Link>
-
-                            </div> */}
-
-                            <div class="navbar-start right-home">
-                                 <Link to='/' class="navbar-item link">
-                                    Home
-                                  </Link>
-                                <Link to='/about' class="navbar-item link ">
-                                    About us
-                                </Link>
-                                <Link to='/contact' class="navbar-item link">
-                                    Contact us
-                                </Link>
-
-                            </div>
-                        </div>
-                </nav>
-
+                    </div>
+                    </nav>
+            </div>
 {/* 1st section */}
     
         
