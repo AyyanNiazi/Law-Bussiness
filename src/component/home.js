@@ -45,7 +45,7 @@ class Home extends Component {
                     <label class='slide-1'>
                     <img src={law1} />
                     <div class='scontent'>
-                            <h3>Free Legal Consultancy</h3>
+                            <h3>Free Legal Consultancy </h3>
                             <h5>Sources of help for people who qualify as low-income</h5>
                         </div>
                     </label>
