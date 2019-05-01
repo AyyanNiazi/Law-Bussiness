@@ -7,3 +7,11 @@
     font-size: 2.149em;
     text-align: center
 }
+
+.box{
+    box-shadow: 4px 4px 12px #888888;
+    margin-top: 50px;
+    padding: 46px;
+    float: left;
+    margin: 20px;
+}

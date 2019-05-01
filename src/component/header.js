@@ -65,7 +65,7 @@ import './header.css';
                     <div id="navbarBasicExample" class="navbar-menu">
                         <div class="navbar-end">
                             <Link class="navbar-item" to=''>Home </Link> 
-                            <Link class="navbar-item" to='/about'>About </Link> 
+                            <Link class="navbar-item" to='/about'>About-us </Link> 
                             <Link class="navbar-item" to='/contact' >Contact
                              </Link> 
                             {/* <a class="navbar-item" href='/about'> <Link>Home </Link> </a> */}
