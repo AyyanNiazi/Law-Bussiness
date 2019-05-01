@@ -34,8 +34,8 @@ import './header.css';
                 <div class='top-head'>
                     <div class='container'>
                         <div class='top-under' >
-                            <p> <i class="fa fa-phone"></i> Call us: 1-800-643-4300
-                                <i class="fa fa-envelope"></i>   info@lawbusinessdemo.web
+                            <p> <i class="fa fa-phone"></i> Call us: +923070084689
+                                <i class="fa fa-envelope"></i>   appscorrer@gmail.com
                              </p>
                         </div>
                         <div class='under-social' >
