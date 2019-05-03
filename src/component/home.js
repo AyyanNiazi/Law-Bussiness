@@ -4,6 +4,7 @@ import l1 from './image/box1.jpeg'
 import l2 from './image/box2.jpeg'
 import l3 from './image/box3.jpeg'
 import l4 from './image/box4.jpeg'
+import member from './image/member.jpg';
 import logo1 from './image/logo1.png'
 import logo2 from './image/logo2.png'
 import logo3 from './image/logo3.png'
@@ -12,6 +13,10 @@ import law from './image/law.jpg'
 import law1 from './image/law-1.jpg'
 import law2 from './image/law-2.jpg'    
 import law3 from './image/law-3.jpg'
+import twitter from './image/twitter.png';
+import facebook from './image/fb.png';
+import vimeo from './image/vimeo.png';
+import person from './image/person.jpg'
 import './header.css';
 
 
@@ -120,7 +125,9 @@ class Home extends Component {
                                 <h1>All people are equal before the law. A good attorney is what makes a difference.</h1>
                             </div>
                             <div class="column ver-align-center">
-                                <a class="button sec-2-btn is-large">Download</a>
+                                <div class='btnContainer'>
+                                    <a class="button sec-2-btn is-large">Download</a>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -131,53 +138,136 @@ class Home extends Component {
                             <div class='column' >
                             <div class="box box1">
                                 <div class="box__right">
-                                    <div>Bussiness, Legal<br/>
-                                    <a href=''>With Smile to Work</a></div>
+                                    <div>
+                                        <h5>Bussiness, Legal</h5>
+                                        <a href=''> With Smile to Work</a>
+                                    </div> 
                                 </div>
                                 <div class="box__left">
-                                    <div>Bussiness, Legal</div>
+                                    <div>
+                                        <h5>Bussiness, Legal</h5>
+                                        <a href=''> With Smile to Work</a>
+                                    </div>  
                                 </div>
                                 <div class="box__top">
-                                    <div>Bussiness, Legal</div>
+                                    <div>
+                                        <h5>Bussiness, Legal</h5>
+                                        <a href=''> With Smile to Work</a>
+                                    </div> 
                                 </div>
                                 <div class="box__bottom">
-                                    <div>Bussiness, Legal</div>
+                                    <div>
+                                        <h5>Bussiness, Legal</h5>
+                                        <a href=''> With Smile to Work</a>
+                                    </div> 
                                 </div>
                                 <div class="box__center">
-                                    <div>Bussiness, Legal</div>
+                                    <div>
+                                        <h5>Bussiness, Legal</h5>
+                                        <a href=''> With Smile to Work</a>
+                                    </div> 
                                 </div>
                             </div>
                             </div>
                             <div class='column' >
                             <div class="box box2">
-                                <div class="box__right">Right → Left</div>
-                                <div class="box__left">Left → Right</div>
-                                <div class="box__top">Top → Bottom</div>
-                                <div class="box__bottom">Bottom → Top</div>
+                            <div class="box__right">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> Handshake</a>
+                                    </div> 
+                                </div>
+                                <div class="box__left">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> Handshake</a>
+                                    </div>  
+                                </div>
+                                <div class="box__top">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> Handshake</a>
+                                    </div> 
+                                </div>
+                                <div class="box__bottom">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> Handshake</a>
+                                    </div> 
+                                </div>
                                 <div class="box__center">
-                                Hover from any side  
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> Handshake</a>
+                                    </div> 
                                 </div>
                             </div>
                             </div>
                             <div class='column' >
                             <div class="box box3">
-                                <div class="box__right">Right → Left</div>
-                                <div class="box__left">Left → Right</div>
-                                <div class="box__top">Top → Bottom</div>
-                                <div class="box__bottom">Bottom → Top</div>
+                            <div class="box__right">
+                                    <div>
+                                        <h5>Bussiness, Team</h5>
+                                        <a href=''> Have No Time</a>
+                                    </div> 
+                                </div>
+                                <div class="box__left">
+                                    <div>
+                                        <h5>Bussiness, Team</h5>
+                                        <a href=''> Have No Time</a>
+                                    </div>  
+                                </div>
+                                <div class="box__top">
+                                    <div>
+                                        <h5>Bussiness, Team</h5>
+                                        <a href=''> Have No Time</a>
+                                    </div> 
+                                </div>
+                                <div class="box__bottom">
+                                    <div>
+                                        <h5>Bussiness, Team</h5>
+                                        <a href=''> Have No Time</a>
+                                    </div> 
+                                </div>
                                 <div class="box__center">
-                                Hover from any side  
+                                    <div>
+                                        <h5>Bussiness, Team</h5>
+                                        <a href=''> Have No Time</a>
+                                    </div> 
                                 </div>
                             </div>
                             </div>
                             <div class='column' >
                             <div class="box box4">
-                                <div class="box__right">Right → Left</div>
-                                <div class="box__left">Left → Right</div>
-                                <div class="box__top">Top → Bottom</div>
-                                <div class="box__bottom">Bottom → Top</div>
+                            <div class="box__right">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> The Right Solution</a>
+                                    </div> 
+                                </div>
+                                <div class="box__left">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> The Right Solution</a>
+                                    </div>  
+                                </div>
+                                <div class="box__top">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> The Right Solution</a>
+                                    </div> 
+                                </div>
+                                <div class="box__bottom">
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> The Right Solution</a>
+                                    </div> 
+                                </div>
                                 <div class="box__center">
-                                Hover from any side  
+                                    <div>
+                                        <h5>Bussiness, Lawyer</h5>
+                                        <a href=''> The Right Solution</a>
+                                    </div> 
                                 </div>
                             </div>
                             </div>
@@ -186,142 +276,195 @@ class Home extends Component {
 
                     {/* 3rd */}
                     <br /><br />
-                    <section>
+                    <section class='sec-3'>
                         <div class='columns'>
                             <div class='column' >
-                                <h3>Latest News</h3>
+                                <h3 class='heading'>Latest News</h3>
 
                                 <div class='columns '>
-                                    <div class='column date' > 23 <span class='inside-date'>  March  </span></div>
+                                <abbr class="published post-date updated" title="March 23, 2014">
+                                    <span class="cmsms_post_day">23</span>
+                                    <span class="cmsms_post_month">Mar</span>
+                                </abbr>
 
                                     <div class='column is-four-fifths' > <h3>Our Team Members</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
-                                        <br /><br />
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
                                     </div>
                                 </div>
                                 <div class='columns'>
-                                    <div class='column' > 21 March </div>
+                                <abbr class="published post-date updated" title="March 23, 2014">
+                                    <span class="cmsms_post_day">21</span>
+                                    <span class="cmsms_post_month">Mar</span>
+                                </abbr>
 
                                     <div class='column is-four-fifths' > <h3>How We Can Help You</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
-                                        <br /><br />
                                         <p style={{ color: 'rgb(156, 154, 154);' }} >CMSMasters Studio is a team of professionals. Every member of our team has spent many hours polishing professional skills and earning a unique experience in the spheres of website design, wordpress development.</p>
                                     </div>
                                 </div>
 
                             </div>
                             <div class='column' >
-                                <h3>Testinomials</h3>
-                                <br />
-                                <div class='coulmns testinomials' >
-                                    <blockquote> "    Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!</blockquote>
+                                <h3 class='heading'>Testinomials</h3>
+                                <div class='coulmn testinomials' >
+                                    Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!
                                 </div>
-
                                 <div>
-                                    <h5>Jeff Blake</h5>
-                                    <h6>Company 2</h6>
+                                <div class='author_wrap'>
+                                <figure class='tl_author_img'>
+                                <img width='45' height='45' src={person} class='attachment-testim-thumb size-testim-thumb wp-post-image' />                             </figure>
+                                    <a target='_blank' href='' class='tl_author'>Jeff Blake</a>
+                                    <p class='tl_company'>Company 2</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* part 2 */}
                         <br />
+                    <section class='sec-4'>
                         <div>
-                            <h3>Our Team</h3>
-
+                            <h3 class='heading'>Our Team</h3>
                             <div class='columns' >
                                 <div class='column' >
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img src={l1} alt="Placeholder image" />
+                                    <div class='card'>
+                                        <div class='card-image'>
+                                            <figure class='image is-4by3'>
+                                                <img src={member} alt='Placeholder image' />
                                             </figure>
+                                            <div class='cmsms_team_rollover'>
+                                            <footer class='entry-meta'>
+                                                <a href='' title='Twitter' target='_blank'>
+                                                    <img src={twitter} alt='Twitter'/>
+                                                </a>
+                                                <a href='' title='Facebook' target='_blank'>
+                                                    <img src={facebook} alt='Facebook'/>
+                                                </a>
+                                                <a href='' title='Vimeo' target='_blank'>
+                                                    <img src={vimeo} alt='Vimeo'/>
+                                                </a>
+                                            </footer>
+                                            </div>
                                         </div>
+                                        <header class='entry-header'>
+                                            <h5 class='person_title'>Jack Simmons</h5>
+                                            <p class='person_subtitle'>Attorney</p>
+                                        </header>
                                         <div class="card-content">
-                                            
-                                            <div class="content">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                                <a class="button sec-2-btn is-large">Download</a>
-                                                
-                                               
+                                            <div class="content has-text-centered	">
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
+                                                <a class="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class='column' >
-                                    <div class='column' >
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img src={l2} alt="Placeholder image" />
+                                    <div class='card'>
+                                        <div class='card-image'>
+                                            <figure class='image is-4by3'>
+                                                <img src={member} alt='Placeholder image' />
                                             </figure>
+                                            <div class='cmsms_team_rollover'>
+                                            <footer class='entry-meta'>
+                                                <a href='' title='Twitter' target='_blank'>
+                                                    <img src={twitter} alt='Twitter'/>
+                                                </a>
+                                                <a href='' title='Facebook' target='_blank'>
+                                                    <img src={facebook} alt='Facebook'/>
+                                                </a>
+                                                <a href='' title='Vimeo' target='_blank'>
+                                                    <img src={vimeo} alt='Vimeo'/>
+                                                </a>
+                                            </footer>
+                                            </div>
                                         </div>
+                                        <header class='entry-header'>
+                                            <h5 class='person_title'>Jack Simmons</h5>
+                                            <p class='person_subtitle'>Attorney</p>
+                                        </header>
                                         <div class="card-content">
-                                            
-                                            <div class="content">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                                <a class="button sec-2-btn is-large">Download</a>
-                                                
-                                               
+                                            <div class="content has-text-centered	">
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
+                                                <a class="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    </div>
                                     <div class='column' >
-                                    <div class='column' >
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img src={l3} alt="Placeholder image" />
+                                    <div class='card'>
+                                        <div class='card-image'>
+                                            <figure class='image is-4by3'>
+                                                <img src={member} alt='Placeholder image' />
                                             </figure>
+                                            <div class='cmsms_team_rollover'>
+                                            <footer class='entry-meta'>
+                                                <a href='' title='Twitter' target='_blank'>
+                                                    <img src={twitter} alt='Twitter'/>
+                                                </a>
+                                                <a href='' title='Facebook' target='_blank'>
+                                                    <img src={facebook} alt='Facebook'/>
+                                                </a>
+                                                <a href='' title='Vimeo' target='_blank'>
+                                                    <img src={vimeo} alt='Vimeo'/>
+                                                </a>
+                                            </footer>
+                                            </div>
                                         </div>
+                                        <header class='entry-header'>
+                                            <h5 class='person_title'>Jack Simmons</h5>
+                                            <p class='person_subtitle'>Attorney</p>
+                                        </header>
                                         <div class="card-content">
-                                            
-                                            <div class="content">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                                <a class="button sec-2-btn is-large">Download</a>
-                                                
-                                               
+                                            <div class="content has-text-centered	">
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
+                                                <a class="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    </div>
                                     <div class='column' >
-                                    <div class='column' >
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img src={l4} alt="Placeholder image" />
+                                    <div class='card'>
+                                        <div class='card-image'>
+                                            <figure class='image is-4by3'>
+                                                <img src={member} alt='Placeholder image' />
                                             </figure>
+                                            <div class='cmsms_team_rollover'>
+                                            <footer class='entry-meta'>
+                                                <a href='' title='Twitter' target='_blank'>
+                                                    <img src={twitter} alt='Twitter'/>
+                                                </a>
+                                                <a href='' title='Facebook' target='_blank'>
+                                                    <img src={facebook} alt='Facebook'/>
+                                                </a>
+                                                <a href='' title='Vimeo' target='_blank'>
+                                                    <img src={vimeo} alt='Vimeo'/>
+                                                </a>
+                                            </footer>
+                                            </div>
                                         </div>
+                                        <header class='entry-header'>
+                                            <h5 class='person_title'>Jack Simmons</h5>
+                                            <p class='person_subtitle'>Attorney</p>
+                                        </header>
                                         <div class="card-content">
-                                            
-                                            <div class="content">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                                <a class="button sec-2-btn is-large">Download</a>
-                                                
-                                               
+                                            <div class="content has-text-centered	">
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
+                                                <a class="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
                                     </div>
                                 </div>
                             </div>
-
+                        </section>
                             {/* #3rd */}
-
-                            <div>
+                        
+                            <div class='sec-5'>
                                 <div class='columns' >
                                     <div class='column' > <img src={logo1} /> </div>
                                     <div class='column' > <img src={logo2} /> </div>

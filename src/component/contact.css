@@ -8,8 +8,7 @@
     color: #ea2e0d;
 
 }
-
-
+.map iframe{height:450px;}
 input :active{
     color: #ea2e0d;
     

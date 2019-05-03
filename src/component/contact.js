@@ -43,7 +43,8 @@ class Contact extends Component {
         return (
             <main>
                 <div class='columns upper' >
-                    <div class='column is-three-quarters' > <h4>Contacts</h4>  </div>
+                    <div class='column is-three-quarters' > <h4>Contacts</h4>
+                </div>
                     <div class='column' > <h6> <span style={{ color: 'red' }} >Home</span> > Contacts</h6> </div>
                 </div>
 
@@ -51,7 +52,10 @@ class Contact extends Component {
 
                 <section class='container' >
                     <div class='columns' >
-                        <div class='column is-three-quarters' > <div ><Map /></div>  <br />
+                        <div class='column is-three-quarters' >
+                         <div class='map'>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3726484152007!2d-0.12934849908101972!3d51.5063789992069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2s!4v1556798202370!5m2!1sen!2s" width="100%" height="450" frameborder="0" style={{border:0}} allowfullscreen></iframe>
+                         </div>  <br />
 
                             <form>
                                 <div class="field">
