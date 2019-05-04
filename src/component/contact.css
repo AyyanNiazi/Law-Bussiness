@@ -13,17 +13,25 @@ input :active{
     color: #ea2e0d;
     
 }
-
-.box{
-    /* padding: 40px; */
-    border: 1px solid rgb(219, 216, 216)
-}
-
-.box p{
-    color: black
-}
-
-.state-box{
-    border: 1px solid rgb(219, 216, 216)
-    
-}
+.pageheading{font-size: 2em}
+.breadcrump{font-size: 13px;text-align: right}
+.box{    /* padding: 40px; */    border: 1px solid rgb(219, 216, 216)}
+.box p{    color: black}
+.state-box{    border: 1px solid rgb(219, 216, 216)}
+main a {    font: 13px/20px Verdana, Geneva, 'DejaVu Sans', sans-serif;    font-weight: normal;    font-style: normal;}
+.recent-post .fa{color:#000;font-size:5.9px;position: relative;top: -2px;padding-right:7px}
+.field.search {    margin-bottom: 25px}
+.contact-form{padding:45px 15px}
+form.contact-form input {    width: 59%;}
+.textareaContainer{width: 70%;}
+form.contact-form input,form.contact-form textarea {border-radius: 0px;outline: none}
+.navc button{width: 100%;background: #fcfcfc;border: 1px solid #ddd;transition: 0.2s;cursor: pointer; padding: 9px 0px;outline: none}
+.navc button:hover{background: #1d1e1f;color: #fff}
+.navc button:focus{background: #ea2e0d;color: #fff}
+.columns.navc>.column {padding: 0px}
+.columns.navc {    padding: 12px 0px}
+.dynamicform .column.is-fourth-fifths{padding: 0px;padding-top:9px;}
+.dynamicform .column.is-fourth-fifths *{font-size:11.9px!important}
+.dynamicform .column.is-fourth-fifths a{display: block}
+.dynamicContent .columns{border-bottom: 1px solid #ddd}
+.contact-form input:focus,.contact-form textarea:focus{border-color: #ea2e0d}

@@ -5,7 +5,9 @@ import ab2 from './image/ab2.png';
 import ab3 from './image/ab3.png';
 import ab4 from './image/ab4.png';
 import ab5 from './image/ab5.png';
-import './about.css'
+import bannerabout from './image/bannerabout.jpeg';
+import './about.css';
+import './main.css';
 
 
 class About extends Component {
@@ -13,7 +15,11 @@ class About extends Component {
     render(props) {
         const { classes } = this.props;
         return (
+            <div>
+                <img src={bannerabout} class='aboutbanner' />
+    
             <div class='container' >
+
                 <section >
                     <div style={{ textAlign: 'center', }} >
                         <h1 style={{ fontSize: '2.149em', color: '#EA2E0d' }} >About us</h1>
@@ -21,19 +27,19 @@ class About extends Component {
                     </div>
 
                     <div class='columns sec-1' style={{ textAlign: 'center' }}  >
-                        <div class='column box' >
+                        <div class='column box ' id='show-three' >
                             <img src={ab1} />
                             <h1>Established in 2019</h1>
      
                             <p>Over 40 years of working experience in the field of Intellectual Property.</p>
                         </div>
-                        <div class='column box' >
+                        <div class='column box ' id='show-three'>
                             <img src={ab2} />
                             <h1>Global Presence</h1>
            
                             <p>With associates around the globe, we can provide you unparalleled services..</p>
                         </div>
-                        <div class='column box' >
+                        <div class='column box ' id='show-three'>
                             <img src={ab3} />
                             <h1>240+</h1>
                 
@@ -80,7 +86,7 @@ class About extends Component {
                             </div>
                         </div>
 
-                        <div class='column box' >
+                        <div class='column box ' >
                         <div class='columns'>
                             <div class='column' > <img src={ab5} />
                                
@@ -97,6 +103,7 @@ class About extends Component {
                         
                     </div>
                 </section>
+            </div>
             </div>
         );
     }

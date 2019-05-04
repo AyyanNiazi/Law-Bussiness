@@ -1,0 +1,15 @@
+.hideme{display:none}.columns{margin-left:0px!important;margin-right: 0px!important;}
+.container{padding: 0px 30px!important;}
+@media screen and (max-width: 1087px){.navbar-brand{width: 100%}}@media screen and (max-width: 768px){.column.is-half-mobile {    float: left;}
+.footer{margin-top: 50px !important}.display-two-768{width: 49.5%;display: inline-block}
+.btnContainer{width: 100%; text-align: center}.sec-2 .column.ver-align-center {    margin: 0 auto;    display: block!important;    width: fit-content;}
+.sec-2 .columns>.column{display: inline-block}
+.footer .columns.contactdetails .fa{float:left!important;}
+.display-two-float{width: 49.5%; float: left;}
+.display-block-text-center{width:100%;text-align:center!important;display: block!important;}.hidden-res{display: none}.hideme{display: block}.show-three{width: 33%;display:inline-block}
+.widget-res-pad-left{padding-left: 19px}#show-three {width: 30%;display: inline-block;padding: 0px !important;margin: 11px !important;min-height: 24em !important;}.sec-35{display: flex}
+.sec-35 .box {min-height: 32.5em!important}.upper{height: fit-content!important;}.dynamicContent .columns{display: flex}}
+@media screen and (max-width: 767px){
+.top-head{display: flex;text-align: center;}
+}
+

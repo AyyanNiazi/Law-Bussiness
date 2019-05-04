@@ -18,6 +18,7 @@ import facebook from './image/fb.png';
 import vimeo from './image/vimeo.png';
 import person from './image/person.jpg'
 import './header.css';
+import './main.css';
 
 
 
@@ -93,22 +94,22 @@ class Home extends Component {
                 <main class='container' >
                     <section class='sec-1' >
                         <div class='columns sec-1-first' >
-                            <div class='column'><i class="fa fa-edit iconc"></i>
+                            <div class='column display-two-768'><i class="fa fa-edit iconc"></i>
                             <h2>WYSIWYG Editor</h2>
                                 <p>A real-time WYSIWYG editor: you are able to customize the look of your website directly on page and see your changes right away!</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-book iconc"></i>
+                            <div class='column display-two-768'><i class="fa fa-book iconc"></i>
                             <h2> Solid Law Practic</h2>
                                 <p>Custom admin panel significantly extends original Wordpress functionality, turning it into an all-in-one tool for content management.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-briefcase iconc"></i> 
+                            <div class='column display-two-768'><i class="fa fa-briefcase iconc"></i> 
                             <h2>Special Design</h2>
                             <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column'><i class="fa fa-anchor iconc"></i> 
+                            <div class='column display-two-768'><i class="fa fa-anchor iconc"></i> 
                             <h2>Powerful Admin</h2>
                                 <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
                                 <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
@@ -135,7 +136,7 @@ class Home extends Component {
                         </div>
                         {/* 2nd part */}
                         <div class='columns' >
-                            <div class='column' >
+                            <div class='column display-two-768' >
                             <div class="box box1">
                                 <div class="box__right">
                                     <div>
@@ -169,7 +170,7 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column' >
+                            <div class='column display-two-768' >
                             <div class="box box2">
                             <div class="box__right">
                                     <div>
@@ -203,7 +204,7 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column' >
+                            <div class='column display-two-768' >
                             <div class="box box3">
                             <div class="box__right">
                                     <div>
@@ -237,7 +238,7 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column' >
+                            <div class='column display-two-768' >
                             <div class="box box4">
                             <div class="box__right">
                                     <div>
@@ -281,7 +282,7 @@ class Home extends Component {
                             <div class='column' >
                                 <h3 class='heading'>Latest News</h3>
 
-                                <div class='columns '>
+                                <div class='columns display-two-768'>
                                 <abbr class="published post-date updated" title="March 23, 2014">
                                     <span class="cmsms_post_day">23</span>
                                     <span class="cmsms_post_month">Mar</span>
@@ -292,7 +293,7 @@ class Home extends Component {
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
                                     </div>
                                 </div>
-                                <div class='columns'>
+                                <div class='columns display-two-float'>
                                 <abbr class="published post-date updated" title="March 23, 2014">
                                     <span class="cmsms_post_day">21</span>
                                     <span class="cmsms_post_month">Mar</span>
@@ -305,7 +306,7 @@ class Home extends Component {
                                 </div>
 
                             </div>
-                            <div class='column' >
+                            <div class='column ' >
                                 <h3 class='heading'>Testinomials</h3>
                                 <div class='coulmn testinomials' >
                                     Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!
@@ -327,7 +328,7 @@ class Home extends Component {
                         <div>
                             <h3 class='heading'>Our Team</h3>
                             <div class='columns' >
-                                <div class='column' >
+                                <div class='column is-half-mobile' >
                                     <div class='card'>
                                         <div class='card-image'>
                                             <figure class='image is-4by3'>
@@ -360,7 +361,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column' >
+                                    <div class='column is-half-mobile' >
                                     <div class='card'>
                                         <div class='card-image'>
                                             <figure class='image is-4by3'>
@@ -393,7 +394,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column' >
+                                    <div class='column is-half-mobile' >
                                     <div class='card'>
                                         <div class='card-image'>
                                             <figure class='image is-4by3'>
@@ -426,7 +427,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column' >
+                                    <div class='column is-half-mobile' >
                                     <div class='card'>
                                         <div class='card-image'>
                                             <figure class='image is-4by3'>
@@ -466,10 +467,10 @@ class Home extends Component {
                         
                             <div class='sec-5'>
                                 <div class='columns' >
-                                    <div class='column' > <img src={logo1} /> </div>
-                                    <div class='column' > <img src={logo2} /> </div>
-                                    <div class='column' > <img src={logo3} /> </div>
-                                    <div class='column' > <img src={logo4} /> </div>
+                                    <div class='column display-two-768' > <img src={logo1} /> </div>
+                                    <div class='column display-two-768' > <img src={logo2} /> </div>
+                                    <div class='column display-two-768' > <img src={logo3} /> </div>
+                                    <div class='column display-two-768' > <img src={logo4} /> </div>
                                 </div>
                             </div>
                 </section>

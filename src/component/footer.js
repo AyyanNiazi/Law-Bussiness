@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css'
-
+import './main.css';
 
 class Footer extends Component {
 
@@ -11,7 +11,7 @@ class Footer extends Component {
         return (
             <footer class='footer' >
                 <div class='columns' >
-                    <div class='column' >
+                    <div class='column display-two-768' >
                         <h2>
                             <a class="footer-logo logo"  >
                                 <i class="fa fa-balance-scale"></i> Law Bussiness
@@ -44,7 +44,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class='column' >
+                    <div class='column display-two-768' >
                         <h4 class='widget-heading'>Recent Posts</h4><hr />
                         <ul>
                             <li>
@@ -74,7 +74,7 @@ class Footer extends Component {
                         </ul>
 
                     </div>
-                    <div class='column' >
+                    <div class='column display-two-768' >
                         <h4 class='widget-heading'>Attorneys</h4> <hr />
                         <ul>
                             <li><a href=''>Jack Simmons</a></li>
@@ -87,7 +87,7 @@ class Footer extends Component {
                             <li><a href=''>Maria Lebovski</a></li>
                         </ul>
                     </div>
-                    <div class='column contactform' >
+                    <div class='column contactform display-two-float' >
                         <h4 class='widget-heading'>Contact Form </h4> <hr />
 
                         <div class="field">
@@ -109,11 +109,17 @@ class Footer extends Component {
                         <button class='button' >Send Mesage</button><br /><br />
                     </div>
                 </div>
-                <div class='columns'>
-                    <div class='column'>
+                <div class='container hideme'>
+                    <div class='columns'>
+                    <span class="copyright">This is a sample website - cmsmasters © 2019 / All Rights Reserved</span>
+                    </div>
+                </div>
+                <div class='container'>
+                <div class='columns copyright'>
+                    <div class='column hidden-res'>
                         <span class="copyright">This is a sample website - cmsmasters © 2019 / All Rights Reserved</span>
                     </div>
-                    <div class='column social has-text-right'>
+                    <div class='column social has-text-right display-block-text-center'>
                         <a href=''  class='fa fa-facebook'></a>
                         <a href=''  class='fa fa-twitter'></a>
                         <a href=''  class='fa fa-rss'></a>
@@ -123,6 +129,7 @@ class Footer extends Component {
                         <a href="#" class="fa fa-flickr"></a>
                     </div>
                 </div> 
+                </div>
             </footer>
         );
     }

@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import pen from './image/pen.png'
 import './header.css';
-
+import './main.css';
     class Header extends Component {
             
         state = {
@@ -11,7 +11,6 @@ import './header.css';
         componentDidMount(){
             window.addEventListener('scroll', ()=> {
                 const isTop = window.scrollY < 100;
-                console.log(isTop);
                 if (isTop !== true){
                     this.setState({  scrolled: true   })
                 }
@@ -23,7 +22,6 @@ import './header.css';
         
         componentWillMount(){
             window.removeEventListener('scroll ', ()=>{
-                console.log('remover')
             })
         }
         render(props) { 
@@ -65,9 +63,8 @@ import './header.css';
                     <div id="navbarBasicExample" class="navbar-menu">
                         <div class="navbar-end">
                             <Link class="navbar-item" to=''>Home </Link> 
-                            <Link class="navbar-item" to='/about'>About-us </Link> 
-                            <Link class="navbar-item" to='/contact' >Contact
-                             </Link> 
+                            <Link class="navbar-item" to='/about'>About us </Link> 
+                            <Link class="navbar-item" to='/contact' >Contact us</Link> 
                             {/* <a class="navbar-item" href='/about'> <Link>Home </Link> </a> */}
                             
                         </div>
