@@ -28,141 +28,141 @@ class Home extends Component {
         return (
             <div>
             <div>  
-                <div class='slider'>
-                    <input name='input-slider' id='input-slide-0' type='radio' class='input-slide input-slide-num' />
-                    <input name='input-slider' id='input-slide-1' type='radio' class='input-slide input-slide-num' />
-                    <input name='input-slider' id='input-slide-2' type='radio' class='input-slide input-slide-num' />
-                    <input name='input-slider' id='input-slide-3' type='radio' class='input-slide input-slide-num' />
-                    <input name='input-slider' id='input-slide-autoplay' type='radio' class='input-slide' checked />
+                <div className='slider'>
+                    <input name='input-slider' id='input-slide-0' type='radio' className='input-slide input-slide-num' />
+                    <input name='input-slider' id='input-slide-1' type='radio' className='input-slide input-slide-num' />
+                    <input name='input-slider' id='input-slide-2' type='radio' className='input-slide input-slide-num' />
+                    <input name='input-slider' id='input-slide-3' type='radio' className='input-slide input-slide-num' />
+                    <input name='input-slider' id='input-slide-autoplay' type='radio' className='input-slide' checked />
                     <ul>
-                    <li class='slide-0'></li>
-                    <li class='slide-1'></li>
-                    <li class='slide-2'></li> 
-                    <li class='slide-3'></li>        
+                    <li className='slide-0'></li>
+                    <li className='slide-1'></li>
+                    <li className='slide-2'></li> 
+                    <li className='slide-3'></li>        
                     </ul>
-                    <div class='slide-description'>
-                    <label class='slide-0'>
+                    <div className='slide-description'>
+                    <label className='slide-0'>
                         <img src={law} />
-                        <div class='scontent'>
+                        <div className='scontent'>
                             <h3>Right Way</h3>
                             <h5>to get legal help!</h5>
                         </div>
                     </label>
-                    <label class='slide-1'>
+                    <label className='slide-1'>
                     <img src={law1} />
-                    <div class='scontent'>
+                    <div className='scontent'>
                             <h3>Free Legal Consultancy </h3>
                             <h5>Sources of help for people who qualify as low-income</h5>
                         </div>
                     </label>
-                    <label class='slide-2'>
+                    <label className='slide-2'>
                     <img src={law2} />
-                    <div class='scontent'>
+                    <div className='scontent'>
                             <h3>Online Legal Help</h3>
                             <h5>We connect consumers and lawyers across the World</h5>
                         </div>
                     </label>
-                    <label class='slide-3'>
+                    <label className='slide-3'>
                     <img src={law3} />
-                    <div class='scontent'>
+                    <div className='scontent'>
                             <h3>Legal Advice in Minutes</h3>
                             <h5>Real Lawyers. Real Answers. Right Now.</h5>
                         </div>
                     </label>
                     </div>
-                    <div class='slider-arrow-prev'>
-                    <label class='slide-0' for='input-slide-0'></label>
-                    <label class='slide-1' for='input-slide-1'></label>
-                    <label class='slide-2' for='input-slide-2'></label>
-                    <label class='slide-3' for='input-slide-3'></label>
+                    <div className='slider-arrow-prev'>
+                    <label className='slide-0' htmlFor='input-slide-0'></label>
+                    <label className='slide-1' htmlFor='input-slide-1'></label>
+                    <label className='slide-2' htmlFor='input-slide-2'></label>
+                    <label className='slide-3' htmlFor='input-slide-3'></label>
                     </div>
-                    <div class='slider-arrow-next'>
-                    <label class='slide-0' for='input-slide-0'></label>
-                    <label class='slide-1' for='input-slide-1'></label>
-                    <label class='slide-2' for='input-slide-2'></label>
-                    <label class='slide-3' for='input-slide-3'></label>
+                    <div className='slider-arrow-next'>
+                    <label className='slide-0' htmlFor='input-slide-0'></label>
+                    <label className='slide-1' htmlFor='input-slide-1'></label>
+                    <label className='slide-2' htmlFor='input-slide-2'></label>
+                    <label className='slide-3' htmlFor='input-slide-3'></label>
                     </div>        
-                    <div class='slider-dot'>
-                    <label class='slide-0' for='input-slide-0'></label>
-                    <label class='slide-1' for='input-slide-1'></label>
-                    <label class='slide-2' for='input-slide-2'></label>
-                    <label class='slide-3' for='input-slide-3'></label>
+                    <div className='slider-dot'>
+                    <label className='slide-0' htmlFor='input-slide-0'></label>
+                    <label className='slide-1' htmlFor='input-slide-1'></label>
+                    <label className='slide-2' htmlFor='input-slide-2'></label>
+                    <label className='slide-3' htmlFor='input-slide-3'></label>
                     </div>        
                 </div>
             </div>
             <div>
-                <main class='container' >
-                    <section class='sec-1' >
-                        <div class='columns sec-1-first' >
-                            <div class='column display-two-768'><i class="fa fa-edit iconc"></i>
+                <main className='container' >
+                    <section className='sec-1' >
+                        <div className='columns sec-1-first' >
+                            <div className='column display-two-768'><i className="fa fa-edit iconc"></i>
                             <h2>WYSIWYG Editor</h2>
                                 <p>A real-time WYSIWYG editor: you are able to customize the look of your website directly on page and see your changes right away!</p>
-                                <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
+                                <h6 style={{ color: 'red' }} >Read more <i className="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column display-two-768'><i class="fa fa-book iconc"></i>
+                            <div className='column display-two-768'><i className="fa fa-book iconc"></i>
                             <h2> Solid Law Practic</h2>
                                 <p>Custom admin panel significantly extends original Wordpress functionality, turning it into an all-in-one tool for content management.</p>
-                                <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
+                                <h6 style={{ color: 'red' }} >Read more <i className="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column display-two-768'><i class="fa fa-briefcase iconc"></i> 
+                            <div className='column display-two-768'><i className="fa fa-briefcase iconc"></i> 
                             <h2>Special Design</h2>
                             <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
-                                <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
+                                <h6 style={{ color: 'red' }} >Read more <i className="fa fa-chevron-right"></i></h6>
                             </div>
-                            <div class='column display-two-768'><i class="fa fa-anchor iconc"></i> 
+                            <div className='column display-two-768'><i className="fa fa-anchor iconc"></i> 
                             <h2>Powerful Admin</h2>
                                 <p>Theme offers super flexibility for color editing and easily turns from a minimalistic style theme into a juicy website with great animation effects.</p>
-                                <h6 style={{ color: 'red' }} >Read more <i class="fa fa-chevron-right"></i></h6>
+                                <h6 style={{ color: 'red' }} >Read more <i className="fa fa-chevron-right"></i></h6>
                             </div>
                         </div>
                     </section>
 
                     {/* 2nd section */}
 
-                    <section class='sec-2'  >
+                    <section className='sec-2'  >
 
-                        <div class="columns first">
-                            <div class="column is-four-fifths" >
+                        <div className="columns first">
+                            <div className="column is-four-fifths" >
                                 <h1>All people are equal before the law. A good attorney is what makes a difference.</h1>
                             </div>
-                            <div class="column ver-align-center">
-                                <div class='btnContainer'>
-                                    <a class="button sec-2-btn is-large">Download</a>
+                            <div className="column ver-align-center">
+                                <div className='btnContainer'>
+                                    <a className="button sec-2-btn is-large">Download</a>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <h4 class='heading'>Solid law practise</h4>
+                            <h4 className='heading'>Solid law practise</h4>
                         </div>
                         {/* 2nd part */}
-                        <div class='columns' >
-                            <div class='column display-two-768' >
-                            <div class="box box1">
-                                <div class="box__right">
+                        <div className='columns' >
+                            <div className='column display-two-768' >
+                            <div className="box box1">
+                                <div className="box__right">
                                     <div>
                                         <h5>Bussiness, Legal</h5>
                                         <a href=''> With Smile to Work</a>
                                     </div> 
                                 </div>
-                                <div class="box__left">
+                                <div className="box__left">
                                     <div>
                                         <h5>Bussiness, Legal</h5>
                                         <a href=''> With Smile to Work</a>
                                     </div>  
                                 </div>
-                                <div class="box__top">
+                                <div className="box__top">
                                     <div>
                                         <h5>Bussiness, Legal</h5>
                                         <a href=''> With Smile to Work</a>
                                     </div> 
                                 </div>
-                                <div class="box__bottom">
+                                <div className="box__bottom">
                                     <div>
                                         <h5>Bussiness, Legal</h5>
                                         <a href=''> With Smile to Work</a>
                                     </div> 
                                 </div>
-                                <div class="box__center">
+                                <div className="box__center">
                                     <div>
                                         <h5>Bussiness, Legal</h5>
                                         <a href=''> With Smile to Work</a>
@@ -170,33 +170,33 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column display-two-768' >
-                            <div class="box box2">
-                            <div class="box__right">
+                            <div className='column display-two-768' >
+                            <div className="box box2">
+                            <div className="box__right">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> Handshake</a>
                                     </div> 
                                 </div>
-                                <div class="box__left">
+                                <div className="box__left">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> Handshake</a>
                                     </div>  
                                 </div>
-                                <div class="box__top">
+                                <div className="box__top">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> Handshake</a>
                                     </div> 
                                 </div>
-                                <div class="box__bottom">
+                                <div className="box__bottom">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> Handshake</a>
                                     </div> 
                                 </div>
-                                <div class="box__center">
+                                <div className="box__center">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> Handshake</a>
@@ -204,33 +204,33 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column display-two-768' >
-                            <div class="box box3">
-                            <div class="box__right">
+                            <div className='column display-two-768' >
+                            <div className="box box3">
+                            <div className="box__right">
                                     <div>
                                         <h5>Bussiness, Team</h5>
                                         <a href=''> Have No Time</a>
                                     </div> 
                                 </div>
-                                <div class="box__left">
+                                <div className="box__left">
                                     <div>
                                         <h5>Bussiness, Team</h5>
                                         <a href=''> Have No Time</a>
                                     </div>  
                                 </div>
-                                <div class="box__top">
+                                <div className="box__top">
                                     <div>
                                         <h5>Bussiness, Team</h5>
                                         <a href=''> Have No Time</a>
                                     </div> 
                                 </div>
-                                <div class="box__bottom">
+                                <div className="box__bottom">
                                     <div>
                                         <h5>Bussiness, Team</h5>
                                         <a href=''> Have No Time</a>
                                     </div> 
                                 </div>
-                                <div class="box__center">
+                                <div className="box__center">
                                     <div>
                                         <h5>Bussiness, Team</h5>
                                         <a href=''> Have No Time</a>
@@ -238,33 +238,33 @@ class Home extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div class='column display-two-768' >
-                            <div class="box box4">
-                            <div class="box__right">
+                            <div className='column display-two-768' >
+                            <div className="box box4">
+                            <div className="box__right">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> The Right Solution</a>
                                     </div> 
                                 </div>
-                                <div class="box__left">
+                                <div className="box__left">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> The Right Solution</a>
                                     </div>  
                                 </div>
-                                <div class="box__top">
+                                <div className="box__top">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> The Right Solution</a>
                                     </div> 
                                 </div>
-                                <div class="box__bottom">
+                                <div className="box__bottom">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> The Right Solution</a>
                                     </div> 
                                 </div>
-                                <div class="box__center">
+                                <div className="box__center">
                                     <div>
                                         <h5>Bussiness, Lawyer</h5>
                                         <a href=''> The Right Solution</a>
@@ -277,46 +277,46 @@ class Home extends Component {
 
                     {/* 3rd */}
                     <br /><br />
-                    <section class='sec-3'>
-                        <div class='columns'>
-                            <div class='column' >
-                                <h3 class='heading'>Latest News</h3>
+                    <section className='sec-3'>
+                        <div className='columns'>
+                            <div className='column' >
+                                <h3 className='heading'>Latest News</h3>
 
-                                <div class='columns display-two-768'>
-                                <abbr class="published post-date updated" title="March 23, 2014">
-                                    <span class="cmsms_post_day">23</span>
-                                    <span class="cmsms_post_month">Mar</span>
+                                <div className='columns display-two-768'>
+                                <abbr className="published post-date updated" title="March 23, 2014">
+                                    <span className="cmsms_post_day">23</span>
+                                    <span className="cmsms_post_month">Mar</span>
                                 </abbr>
 
-                                    <div class='column is-four-fifths' > <h3>Our Team Members</h3>
+                                    <div className='column is-four-fifths' > <h3>Our Team Members</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
                                     </div>
                                 </div>
-                                <div class='columns display-two-float'>
-                                <abbr class="published post-date updated" title="March 23, 2014">
-                                    <span class="cmsms_post_day">21</span>
-                                    <span class="cmsms_post_month">Mar</span>
+                                <div className='columns display-two-float'>
+                                <abbr className="published post-date updated" title="March 23, 2014">
+                                    <span className="cmsms_post_day">21</span>
+                                    <span className="cmsms_post_month">Mar</span>
                                 </abbr>
 
-                                    <div class='column is-four-fifths' > <h3>How We Can Help You</h3>
+                                    <div className='column is-four-fifths' > <h3>How We Can Help You</h3>
                                         <p> <spnan style={{ color: 'red' }} > cmsmmasters </spnan> comments (0)</p>
                                         <p style={{ color: 'rgb(156, 154, 154);' }} >CMSMasters Studio is a team of professionals. Every member of our team has spent many hours polishing professional skills and earning a unique experience in the spheres of website design, wordpress development.</p>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class='column ' >
-                                <h3 class='heading'>Testinomials</h3>
-                                <div class='coulmn testinomials' >
+                            <div className='column ' >
+                                <h3 className='heading'>Testinomials</h3>
+                                <div className='coulmn testinomials' >
                                     Never expected to get such a powerful theme for this little money! It's a pleasure to work with, seems it just guesses my thoughts! I was looking for a really powerful corporate theme for my website, that would allow profound formatting and very Diverse content representation. Now I've found it!
                                 </div>
                                 <div>
-                                <div class='author_wrap'>
-                                <figure class='tl_author_img'>
-                                <img width='45' height='45' src={person} class='attachment-testim-thumb size-testim-thumb wp-post-image' />                             </figure>
-                                    <a target='_blank' href='' class='tl_author'>Jeff Blake</a>
-                                    <p class='tl_company'>Company 2</p>
+                                <div className='author_wrap'>
+                                <figure className='tl_author_img'>
+                                <img width='45' height='45' src={person} className='attachment-testim-thumb size-testim-thumb wp-post-image' />                             </figure>
+                                    <a target='_blank' href='' className='tl_author'>Jeff Blake</a>
+                                    <p className='tl_company'>Company 2</p>
                                     </div>
                                 </div>
                             </div>
@@ -324,18 +324,18 @@ class Home extends Component {
 
                         {/* part 2 */}
                         <br />
-                    <section class='sec-4'>
+                    <section className='sec-4'>
                         <div>
-                            <h3 class='heading'>Our Team</h3>
-                            <div class='columns' >
-                                <div class='column is-half-mobile' >
-                                    <div class='card'>
-                                        <div class='card-image'>
-                                            <figure class='image is-4by3'>
+                            <h3 className='heading'>Our Team</h3>
+                            <div className='columns' >
+                                <div className='column is-half-mobile' >
+                                    <div className='card'>
+                                        <div className='card-image'>
+                                            <figure className='image is-4by3'>
                                                 <img src={member} alt='Placeholder image' />
                                             </figure>
-                                            <div class='cmsms_team_rollover'>
-                                            <footer class='entry-meta'>
+                                            <div className='cmsms_team_rollover'>
+                                            <footer className='entry-meta'>
                                                 <a href='' title='Twitter' target='_blank'>
                                                     <img src={twitter} alt='Twitter'/>
                                                 </a>
@@ -348,27 +348,27 @@ class Home extends Component {
                                             </footer>
                                             </div>
                                         </div>
-                                        <header class='entry-header'>
-                                            <h5 class='person_title'>Jack Simmons</h5>
-                                            <p class='person_subtitle'>Attorney</p>
+                                        <header className='entry-header'>
+                                            <h5 className='person_title'>Jack Simmons</h5>
+                                            <p className='person_subtitle'>Attorney</p>
                                         </header>
-                                        <div class="card-content">
-                                            <div class="content has-text-centered	">
+                                        <div className="card-content">
+                                            <div className="content has-text-centered	">
                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
-                                                <a class="button sec-2-btn is-small">Profile</a>
+                                                <a className="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column is-half-mobile' >
-                                    <div class='card'>
-                                        <div class='card-image'>
-                                            <figure class='image is-4by3'>
+                                    <div className='column is-half-mobile' >
+                                    <div className='card'>
+                                        <div className='card-image'>
+                                            <figure className='image is-4by3'>
                                                 <img src={member} alt='Placeholder image' />
                                             </figure>
-                                            <div class='cmsms_team_rollover'>
-                                            <footer class='entry-meta'>
+                                            <div className='cmsms_team_rollover'>
+                                            <footer className='entry-meta'>
                                                 <a href='' title='Twitter' target='_blank'>
                                                     <img src={twitter} alt='Twitter'/>
                                                 </a>
@@ -381,27 +381,27 @@ class Home extends Component {
                                             </footer>
                                             </div>
                                         </div>
-                                        <header class='entry-header'>
-                                            <h5 class='person_title'>Jack Simmons</h5>
-                                            <p class='person_subtitle'>Attorney</p>
+                                        <header className='entry-header'>
+                                            <h5 className='person_title'>Jack Simmons</h5>
+                                            <p className='person_subtitle'>Attorney</p>
                                         </header>
-                                        <div class="card-content">
-                                            <div class="content has-text-centered	">
+                                        <div className="card-content">
+                                            <div className="content has-text-centered	">
                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
-                                                <a class="button sec-2-btn is-small">Profile</a>
+                                                <a className="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column is-half-mobile' >
-                                    <div class='card'>
-                                        <div class='card-image'>
-                                            <figure class='image is-4by3'>
+                                    <div className='column is-half-mobile' >
+                                    <div className='card'>
+                                        <div className='card-image'>
+                                            <figure className='image is-4by3'>
                                                 <img src={member} alt='Placeholder image' />
                                             </figure>
-                                            <div class='cmsms_team_rollover'>
-                                            <footer class='entry-meta'>
+                                            <div className='cmsms_team_rollover'>
+                                            <footer className='entry-meta'>
                                                 <a href='' title='Twitter' target='_blank'>
                                                     <img src={twitter} alt='Twitter'/>
                                                 </a>
@@ -414,27 +414,27 @@ class Home extends Component {
                                             </footer>
                                             </div>
                                         </div>
-                                        <header class='entry-header'>
-                                            <h5 class='person_title'>Jack Simmons</h5>
-                                            <p class='person_subtitle'>Attorney</p>
+                                        <header className='entry-header'>
+                                            <h5 className='person_title'>Jack Simmons</h5>
+                                            <p className='person_subtitle'>Attorney</p>
                                         </header>
-                                        <div class="card-content">
-                                            <div class="content has-text-centered	">
+                                        <div className="card-content">
+                                            <div className="content has-text-centered	">
                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
-                                                <a class="button sec-2-btn is-small">Profile</a>
+                                                <a className="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='column is-half-mobile' >
-                                    <div class='card'>
-                                        <div class='card-image'>
-                                            <figure class='image is-4by3'>
+                                    <div className='column is-half-mobile' >
+                                    <div className='card'>
+                                        <div className='card-image'>
+                                            <figure className='image is-4by3'>
                                                 <img src={member} alt='Placeholder image' />
                                             </figure>
-                                            <div class='cmsms_team_rollover'>
-                                            <footer class='entry-meta'>
+                                            <div className='cmsms_team_rollover'>
+                                            <footer className='entry-meta'>
                                                 <a href='' title='Twitter' target='_blank'>
                                                     <img src={twitter} alt='Twitter'/>
                                                 </a>
@@ -447,15 +447,15 @@ class Home extends Component {
                                             </footer>
                                             </div>
                                         </div>
-                                        <header class='entry-header'>
-                                            <h5 class='person_title'>Jack Simmons</h5>
-                                            <p class='person_subtitle'>Attorney</p>
+                                        <header className='entry-header'>
+                                            <h5 className='person_title'>Jack Simmons</h5>
+                                            <p className='person_subtitle'>Attorney</p>
                                         </header>
-                                        <div class="card-content">
-                                            <div class="content has-text-centered	">
+                                        <div className="card-content">
+                                            <div className="content has-text-centered	">
                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Phasellus nec iaculis mauris, Lorem ipsim tipsim jipsim</p>
-                                                <a class="button sec-2-btn is-small">Profile</a>
+                                                <a className="button sec-2-btn is-small">Profile</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -465,12 +465,12 @@ class Home extends Component {
                         </section>
                             {/* #3rd */}
                         
-                            <div class='sec-5'>
-                                <div class='columns' >
-                                    <div class='column display-two-768' > <img src={logo1} /> </div>
-                                    <div class='column display-two-768' > <img src={logo2} /> </div>
-                                    <div class='column display-two-768' > <img src={logo3} /> </div>
-                                    <div class='column display-two-768' > <img src={logo4} /> </div>
+                            <div className='sec-5'>
+                                <div className='columns' >
+                                    <div className='column display-two-768' > <img src={logo1} /> </div>
+                                    <div className='column display-two-768' > <img src={logo2} /> </div>
+                                    <div className='column display-two-768' > <img src={logo3} /> </div>
+                                    <div className='column display-two-768' > <img src={logo4} /> </div>
                                 </div>
                             </div>
                 </section>

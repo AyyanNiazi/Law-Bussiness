@@ -1,7 +1,13 @@
+.fourzerofour{
+background: url('image/404/bg-404.png');
+width: 100%;padding: 30px;
+min-height: 450px;overflow: hidden;
+}
 .hideme{display:none}.columns{margin-left:0px!important;margin-right: 0px!important;}
-.container{padding: 0px 30px!important;}
+.container{padding: 0px 30px!important;}.button.is-link {background-color: #ff0000!important;transition:0.3s}
+.button.is-link:hover {background-color: #ca1717!important}
 @media screen and (max-width: 1087px){.navbar-brand{width: 100%}}@media screen and (max-width: 768px){.column.is-half-mobile {    float: left;}
-.footer{margin-top: 50px !important}.display-two-768{width: 49.5%;display: inline-block}
+.footer{margin-top: 50px !important}.display-two-768{width: 49.5%;display: inline-block}.sec-2 .columns .column h1{text-align:center}
 .btnContainer{width: 100%; text-align: center}.sec-2 .column.ver-align-center {    margin: 0 auto;    display: block!important;    width: fit-content;}
 .sec-2 .columns>.column{display: inline-block}
 .footer .columns.contactdetails .fa{float:left!important;}
@@ -11,5 +17,12 @@
 .sec-35 .box {min-height: 32.5em!important}.upper{height: fit-content!important;}.dynamicContent .columns{display: flex}}
 @media screen and (max-width: 767px){
 .top-head{display: flex;text-align: center;}
-}
+.navreact>.container,.nav.scrolled>.container{padding: 0px!important}
+.slide-description .scontent{width: 95%;}
+.column>.box>div>div a{background:aliceblue;color:black;padding:3px 3px;font-size: 12px;}.one-767 {width:100%}
+.container.hideme,.columns.copyright .display-block-text-center{text-align:center;padding:0px !important;padding-bottom:19px!important;}
+.columns.copyright .display-block-text-center{padding-top: 19px!important;width:113%}
+.under-social{float:unset}.top-under {width: 100%}.top-under span{display: block}
+.sec-1 #show-three{width: 100%;min-height:19em!important}.sec-35 .box {    width: 100% !important;    display: block !important;    position: unset;    min-width: 100%;    float: unset;}
+form.contact-form input,.textareaContainer{width: 95%!important;}.sec-35{display:block;}}
 

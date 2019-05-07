@@ -20,9 +20,9 @@
 .sec-35{    margin-top: 35px;margin-bottom: 45px!important}
 .sec-35 h5{margin-bottom:11PX}
 .sec-35 *{color:#4a4a4a;font-size:14px}
-.sec-35 .box{    padding: 15px!important;height: fit-content!important;min-height: 18.5em;    margin-right: 1.5em!important;}
+.sec-35 .box{    padding: 15px!important;height: fit-content!important;min-height: 21.5em;    margin-right: 1.5em!important;}
 .sec-1 .box,.sec-35 .box{    box-shadow: 0px 0px 0px #888888!important;transition: 0.39s;
     border-bottom: 12px solid #fbdada;}
 .sec-1 .box:hover,.sec-35 .box:hover{    box-shadow: 4px 4px 12px #888888!important;border-bottom-color:#EA2E0d }
 p{margin-bottom: 10px;}
-.aboutbanner{height: 450px;width:100%}
+.aboutbanner{height: 510px;width:100%}

@@ -11,7 +11,7 @@ class Footer extends Component {
         return (
             <footer class='footer' >
                 <div class='columns' >
-                    <div class='column display-two-768' >
+                    <div class='column display-two-768 one-767' >
                         <h2>
                             <a class="footer-logo logo"  >
                                 <i class="fa fa-balance-scale"></i> Law Bussiness
@@ -44,7 +44,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class='column display-two-768' >
+                    <div class='column display-two-768 one-767' >
                         <h4 class='widget-heading'>Recent Posts</h4><hr />
                         <ul>
                             <li>
@@ -74,7 +74,7 @@ class Footer extends Component {
                         </ul>
 
                     </div>
-                    <div class='column display-two-768' >
+                    <div class='column display-two-768 one-767' >
                         <h4 class='widget-heading'>Attorneys</h4> <hr />
                         <ul>
                             <li><a href=''>Jack Simmons</a></li>
@@ -87,7 +87,7 @@ class Footer extends Component {
                             <li><a href=''>Maria Lebovski</a></li>
                         </ul>
                     </div>
-                    <div class='column contactform display-two-float' >
+                    <div class='column contactform display-two-float one-767' >
                         <h4 class='widget-heading'>Contact Form </h4> <hr />
 
                         <div class="field">

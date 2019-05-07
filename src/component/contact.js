@@ -113,7 +113,7 @@ class Contact extends Component {
 
                             </div>
 
-                            <div class='recent-post display-two-float' >
+                            <div class='recent-post display-two-float one-767' >
                                 <h3>Recent Posts </h3><br/>
 
                                 <a><i class='fa fa-chevron-right'></i>  Our Team Members</a><hr />
@@ -123,15 +123,11 @@ class Contact extends Component {
                                 <a><i class='fa fa-chevron-right'></i>  Video post format</a><br /> <br /> <hr />
                             </div>
                             <div>
-                            <div class='display-two-float widget-res-pad-left'>
+                            <div class='display-two-float widget-res-pad-left one-767'>
                                 <h2>Testinomials</h2>
                                 <br />
-                                <div class='box' >
-                                    <p>Never expected to get such a powerfull theme for this little! Its a pleasure to work with, seems it...</p>
+                                
 
-                                </div>
-                                <p style={{ color: 'red' }} >Author 2  </p>
-                                <h6>Newman Ltd.</h6>
                                 <hr />
                             </div>
                                 <div>
