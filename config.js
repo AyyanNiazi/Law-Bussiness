@@ -1,4 +1,4 @@
 export default {
-    USER: 'app-scorrer@gmail.com',
-    PASS: 'sweetshalli'
+    USER: 'appscorrer@gmail.com',
+    PASS: '**********'
 };
