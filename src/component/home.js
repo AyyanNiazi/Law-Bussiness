@@ -282,7 +282,7 @@ class Home extends Component {
                             <div className='column' >
                                 <h3 className='heading'>Latest News</h3>
 
-                                <div className='columns display-two-768'>
+                                <div className='columns display-two-768 one-767'>
                                 <abbr className="published post-date updated" title="March 23, 2014">
                                     <span className="cmsms_post_day">23</span>
                                     <span className="cmsms_post_month">Mar</span>
@@ -293,7 +293,7 @@ class Home extends Component {
                                         <p style={{ color: 'rgb(156, 154, 154);' }} > We enjoy  the process of creating a theme from its start to its end – from a sparkling design idea, to the very release..</p>
                                     </div>
                                 </div>
-                                <div className='columns display-two-float'>
+                                <div className='columns display-two-float one-767'>
                                 <abbr className="published post-date updated" title="March 23, 2014">
                                     <span className="cmsms_post_day">21</span>
                                     <span className="cmsms_post_month">Mar</span>
@@ -328,7 +328,7 @@ class Home extends Component {
                         <div>
                             <h3 className='heading'>Our Team</h3>
                             <div className='columns' >
-                                <div className='column is-half-mobile' >
+                                <div className='column is-half-mobile one-767' >
                                     <div className='card'>
                                         <div className='card-image'>
                                             <figure className='image is-4by3'>
@@ -361,7 +361,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='column is-half-mobile' >
+                                    <div className='column is-half-mobile one-767' >
                                     <div className='card'>
                                         <div className='card-image'>
                                             <figure className='image is-4by3'>
@@ -394,7 +394,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='column is-half-mobile' >
+                                    <div className='column is-half-mobile one-767' >
                                     <div className='card'>
                                         <div className='card-image'>
                                             <figure className='image is-4by3'>
@@ -427,7 +427,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='column is-half-mobile' >
+                                    <div className='column is-half-mobile one-767' >
                                     <div className='card'>
                                         <div className='card-image'>
                                             <figure className='image is-4by3'>
